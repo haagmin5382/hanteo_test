@@ -1,7 +1,19 @@
-import React from "react";
+import Layout from "./layout";
+import "./contents.scss";
+import ContentsTitle from "./ContentsTitle";
+import List from "./List";
 
-const index = () => {
-  return <div>콘텐츠</div>;
+const Index = () => {
+  return (
+    <Layout>
+      <ContentsTitle />
+      <List />
+      <List />
+      <List />
+      <List />
+      <List />
+    </Layout>
+  );
 };
 
-export default index;
+export default Index;
