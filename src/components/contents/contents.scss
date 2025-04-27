@@ -40,6 +40,18 @@
       }
     }
   }
+  // ── 여기에 로딩 컴포넌트 스타일 추가 ──
+  &__loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+  }
+
+  &__loading-text {
+    font-size: 0.875rem;
+    color: #999;
+  }
 }
 
 // footer styling (bottom arrow area)
