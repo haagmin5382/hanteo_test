@@ -1,7 +1,13 @@
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { ComponentType } from "Type";
 
 const Layout = ({ children }: ComponentType.LayoutProps) => {
-  return <div className="contents ">{children}</div>;
+  const queryClient = new QueryClient();
+  return (
+    <QueryClientProvider client={queryClient}>
+      <div className="contents ">{children}</div>
+    </QueryClientProvider>
+  );
 };
 
 export default Layout;
