@@ -4,7 +4,7 @@ import { useInfiniteQuery } from "@tanstack/react-query";
 import List from "./List";
 
 const SongLists = () => {
-  const loadDataNumber = 20;
+  const loadDataNumber = 10;
   const { data, fetchNextPage } = useInfiniteQuery({
     queryKey: ["chartData"],
     queryFn: async ({ pageParam = 0 }) => {

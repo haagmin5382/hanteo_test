@@ -18,7 +18,6 @@ const Index = () => {
     if (slideRef.current && slideIndex >= totalSlides - 1) {
       setSlideIndex(0);
       slideRef.current.style.transform = "translateX(0%)";
-      // 슬라이드 마지막의 다음은 슬라이드 첫번째로 돌아감
     } else {
       if (slideRef.current) {
         setSlideIndex(slideIndex + 1);
@@ -26,7 +25,6 @@ const Index = () => {
           (slideIndex + 1) * 100
         }%)`;
       }
-      // 슬라이드를 한칸씩 이동하는데 그 한칸의 크기는 이미지의 크기(93%)만큼 이동한다.
     }
   };
   useEffect(() => {
