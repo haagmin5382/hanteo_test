@@ -20,7 +20,6 @@ const List = ({
     ".last",
     () => {
       if (className === "last" && rank !== 100) {
-        console.log(rank);
         setIsLoading(true);
         setTimeout(fetchNextPage, 1000);
       }
@@ -34,7 +33,7 @@ const List = ({
         <p className="contents__item-rank">{rank} . </p>
         <img className="contents__item-thumb" />
         <p className="contents__item-title">{title}</p>
-        <p className="contents__item-artist"> - {artist}</p>
+        <p className="contents__item-artist">&nbsp; {artist}</p>
       </div>
       {isLoading && className === "last" ? (
         <div className="contents__loading">
