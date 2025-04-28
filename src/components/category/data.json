@@ -4,37 +4,37 @@
       "id": 1,
       "name": "차트",
       "description": "Music Chart",
-      "link": "./chart"
+      "link": "/chart"
     },
     {
       "id": 2,
       "name": "Whook",
       "description": "App chating",
-      "link": "./whook"
+      "link": "/whook"
     },
     {
       "id": 3,
       "name": "이벤트",
       "description": "Event",
-      "link": "./event"
+      "link": "/event"
     },
     {
       "id": 4,
       "name": "뉴스",
       "description": "news",
-      "link": "./news"
+      "link": "/news"
     },
     {
       "id": 5,
       "name": "스토어",
       "description": "store for goods",
-      "link": "./store"
+      "link": "/store"
     },
     {
       "id": 6,
       "name": "충전소",
       "description": "charge point with credit card",
-      "link": "./charging"
+      "link": "/charging"
     }
   ]
 }

@@ -1,5 +1,9 @@
 import type { Metadata } from "next";
 import "./reset.scss";
+import Category from "../components/category";
+import Slider from "../components/slider";
+import Contents from "../components/contents";
+import SwipeNavigator from "@/components/common/SwipleNavigator";
 
 export const metadata: Metadata = {
   title: "Hanteo Global Test",
@@ -13,7 +17,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <SwipeNavigator>
+          <Category />
+          {children}
+          <Slider />
+          <Contents />
+        </SwipeNavigator>
+      </body>
     </html>
   );
 }

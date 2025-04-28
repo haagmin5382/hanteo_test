@@ -34,8 +34,13 @@ const Index = () => {
   return (
     <Layout>
       <div className="slider__viewport" ref={slideRef}>
-        {slideData.map(({ id, image, description }) => (
-          <SlideCard key={id} image={image} description={description} />
+        {slideData.map(({ id, image, description, link }) => (
+          <SlideCard
+            key={id}
+            image={image}
+            description={description}
+            link={link}
+          />
         ))}
       </div>
       <SliderDot slideIndex={slideIndex} />
